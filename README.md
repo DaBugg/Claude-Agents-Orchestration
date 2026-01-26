@@ -302,4 +302,4 @@ MIT License - use freely, modify, distribute.
 - [Anthropic API](https://docs.anthropic.com/)
 - [Get API Key](https://console.anthropic.com/)
 - [Claude Code](https://claude.ai/code)
-- [Skills Repo] (https://github.com/skillcreatorai/Ai-Agent-Skills)
+- [Skills-Repo] (https://github.com/skillcreatorai/Ai-Agent-Skills)

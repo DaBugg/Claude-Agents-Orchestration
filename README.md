@@ -121,12 +121,71 @@ Browser-based data extraction with:
 
 ## How to Add Your Own Skills
 
-### 1. Create a skill folder
+### Option A: Ask Claude Code to Generate It (Recommended)
+
+The easiest way to create a new skill is to ask Claude Code directly. It will generate the complete skill folder, SKILL.md file, and update the registry automatically.
+
+**Workflow:**
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  YOU: "Create a skill for generating unit tests"               │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  CLAUDE CODE:                                                   │
+│  1. Reads skills-builder/CLAUDE.md for skill standards         │
+│  2. Uses templates from skills-builder/templates/              │
+│  3. Creates new folder: skills-builder/skills/unit-tests/      │
+│  4. Generates SKILL.md with:                                   │
+│     - YAML frontmatter (triggers, domain, browser flag)        │
+│     - Detailed instructions                                     │
+│     - Examples and templates                                    │
+│  5. Updates skills-builder/registry.md                         │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  OUTPUT: New skill ready to use                                 │
+│                                                                 │
+│  skills-builder/skills/unit-tests/                             │
+│  └── SKILL.md    ← Complete skill with instructions            │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Example Prompts:**
+
+```bash
+# In Claude Code CLI or IDE extension
+"Create a skill for generating unit tests"
+
+"Build me a skill that writes API documentation"
+
+"I need a skill for optimizing SQL queries - should detect N+1 problems"
+
+"Create a resume-writer skill for professional resumes"
+```
+
+Claude Code will:
+1. Create `skills-builder/skills/<skill-name>/SKILL.md`
+2. Include proper YAML frontmatter with triggers and domain
+3. Write detailed instructions Claude should follow
+4. Add input/output examples
+5. Register the skill in `skills-builder/registry.md`
+
+---
+
+### Option B: Create Manually
+
+If you prefer to create skills by hand:
+
+#### 1. Create a skill folder
 ```bash
 mkdir skills-builder/skills/my-skill
 ```
 
-### 2. Create SKILL.md
+#### 2. Create SKILL.md
 ```markdown
 ---
 name: my-skill
@@ -147,7 +206,7 @@ browser: false
 <Input/output examples>
 ```
 
-### 3. Update the registry
+#### 3. Update the registry
 Add to `skills-builder/registry.md`:
 ```markdown
 ### my-skill
@@ -243,3 +302,4 @@ MIT License - use freely, modify, distribute.
 - [Anthropic API](https://docs.anthropic.com/)
 - [Get API Key](https://console.anthropic.com/)
 - [Claude Code](https://claude.ai/code)
+- [Skills Repo] (https://github.com/skillcreatorai/Ai-Agent-Skills)

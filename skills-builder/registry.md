@@ -9,7 +9,7 @@
 | web-scraping | web | scrape, crawl, extract | yes | active |
 | marketing-copy | creative | sms, lead gen, ad copy, cta | no | active |
 | code-review | code | review, bugs, refactor, security | no | active |
-| microsoft-infra-planning | devops | active directory, azure migration, admin roles | no | active |
+| microsoft-infra-planning | devops | active directory, entra id, admin roles | no | active |
 
 ## Domains
 
@@ -72,11 +72,11 @@
 - **Path**: skills/microsoft-infra-planning/SKILL.md
 - **Description**: Discovers requirements and designs Microsoft AD or Azure infrastructure plans for identity, hosting, storage, and governance
 - **Domain**: devops
-- **Triggers**: active directory, azure migration, office infrastructure, microsoft server setup, identity and access management, ad or azure, hosting and storage planning, admin roles
+- **Triggers**: active directory, azure migration, entra id, microsoft server setup, identity and access management, hybrid identity, office infrastructure planning, admin roles
 - **Browser**: no
 - **Dependencies**: none
 - **Created**: 2026-02-10
-- **Version**: 1.0.0
+- **Version**: 1.1.0
 - **Usage Count**: 0
 
 ---

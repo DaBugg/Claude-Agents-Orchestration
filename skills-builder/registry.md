@@ -10,6 +10,7 @@
 | marketing-copy | creative | sms, lead gen, ad copy, cta | no | active |
 | code-review | code | review, bugs, refactor, security | no | active |
 | webflow-pages | web | webflow, build page, seo, schema, meta tags | no | active |
+| canva-pitch-deck | creative | canva, pitch deck, product launch, presentation | no | active |
 
 ## Domains
 
@@ -80,19 +81,31 @@
 - **Version**: 1.0.0
 - **Usage Count**: 0
 
+### canva-pitch-deck
+- **Path**: skills/canva-pitch-deck/SKILL.md
+- **Description**: Builds pitch decks and product-launch presentations in Canva via MCP (slide plans, brand kits, assets, placeholders, off-Canva and Canva template synthesis)
+- **Domain**: creative
+- **Triggers**: canva, pitch deck, investor deck, fundraising deck, product launch, launch presentation, presentation, slides, deck, keynote, slide deck, demo day, board deck
+- **Browser**: no
+- **Dependencies**: none
+- **MCP Server**: user-Canva
+- **Created**: 2026-03-19
+- **Version**: 1.0.0
+- **Usage Count**: 0
+
 ---
 
 ## Statistics
 
-- **Total Skills**: 4
+- **Total Skills**: 5
 - **By Domain**:
   - Code: 1
   - Docs: 0
   - Data: 0
   - Web: 2
   - DevOps: 0
-  - Creative: 1
+  - Creative: 2
 - **Browser-Required**: 1
 - **Most Used**: -
-- **Last Created**: 2026-02-20
-- **Last Updated**: 2026-02-20
+- **Last Created**: 2026-03-19
+- **Last Updated**: 2026-03-19
